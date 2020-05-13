@@ -33,11 +33,11 @@ Add the file `stored_responses/data/by_id/{id}.json` and populate it with some [
       {
         "id": "2615127768151731669",
         "impid": "appnexus_imp_id1",
-		"price": 0.010000,
-		"adid": "107987536",
-		"adomain": [
-			"appnexus.com"
-		]
+        "price": 0.010000,
+        "adid": "107987536",
+        "adomain": [
+            "appnexus.com"
+        ]
       }
     ],
     "seat": "appnexus",
@@ -82,37 +82,37 @@ Expected Response ( as body of response):
 
 ```json
 {
-    "id": "tid",
-    "seatbid": [
+  "id": "tid",
+  "seatbid": [
+    {
+      "bid": [
         {
-            "bid": [
-                {
-                    "id": "2615127768151731669",
-                    "impid": "appnexus_imp_id1",
-                    "price": 0.010000,
-                    "adid": "107987536",
-                    "adomain": [
-                        "appnexus.com"
-                    ],
-                    "ext": {
-                        "prebid": {
-                            "type": "banner"
-                        }
-                    }
-                }
-            ],
-            "seat": "appnexus",
-            "group": 0
+          "id": "2615127768151731669",
+          "impid": "appnexus_imp_id1",
+          "price": 0.010000,
+          "adid": "107987536",
+          "adomain": [
+              "appnexus.com"
+          ],
+          "ext": {
+            "prebid": {
+              "type": "banner"
+            }
+          }
         }
-    ],
-    "cur": "USD",
-    "ext": {
-        "responsetimemillis": {
-            "appnexus": 0
-        },
-        "tmaxrequest": 900,
-        "auctiontimestamp": 1588751121655
+      ],
+      "seat": "appnexus",
+      "group": 0
     }
+  ],
+  "cur": "USD",
+  "ext": {
+    "responsetimemillis": {
+        "appnexus": 0
+    },
+    "tmaxrequest": 900,
+    "auctiontimestamp": 1588751121655
+  }
 }
 ```
 
